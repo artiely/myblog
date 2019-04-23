@@ -35,7 +35,7 @@ one()
 当程序（代码）开始执行时 javscript 引擎创建 GobalExecutionContext （全局执行上下文）推入当前的执行栈，此时 GobalExecutionContext 处于栈顶会立刻执行全局执行上下文 然后遇到 `one()` 引擎都会为该函数创建一个新的执行上下文 oneFunctionExecutionContext 并将其推到当前执行栈的顶端并执行，然后遇到`two()` twoFunctionExecutionContext 入栈并执行至出栈，回到 oneFunctionExecutionContext 继续执行至出栈 ,最后剩余一个 GobalExecutionContext 它会在程序关闭的时候出栈。
 
 然后调用栈如下图：
-![](./images/Stack2.svg)
+![](https://github.com/artiely/myblog/blob/master/images/stack2.svg)
 
 如果是这样的代码
 
@@ -47,7 +47,7 @@ foo()
 ```
 
 如下
-![](./images/stackoverflow.svg)
+![](https://github.com/artiely/myblog/blob/master/images/stackoverflow.svg)
 当一个递归没有结束点的时候就会出现栈溢出
 
 ## 什么是执行上下文
